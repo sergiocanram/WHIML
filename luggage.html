@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WHIML - Mis Maletas</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f9;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .phone {
+            width: 375px;
+            height: 667px;
+            border: 15px solid #2d87d7;
+            border-radius: 40px;
+            background-color: #fff;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+            overflow: hidden;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px 15px;
+            background-color: #2d87d7;
+            color: white;
+            font-size: 20px;
+            font-weight: bold;
+        }
+
+        .header .logo {
+            flex: 1;
+            text-align: center;
+        }
+
+        .header .sos {
+            flex: 0;
+            color: white;
+            background-color: red;
+            font-size: 18px;
+            border-radius: 10px;
+            font-weight: bolder;
+            cursor: pointer;
+            text-transform: uppercase;
+        }
+
+        .container {
+            flex: 1;
+            padding: 15px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            overflow-y: auto;
+        }
+
+        .camera-placeholder {
+            width: 100%;
+            height: 150px;
+            background-color: #ccc;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-bottom: 15px;
+            border-radius: 10px;
+        }
+
+        .uploaded-images-container, .individual-details-container {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ddd;
+            margin-bottom: 15px;
+            background-color: #f9f9f9;
+            border-radius: 5px;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+        }
+
+        .uploaded-images-container img, .individual-details-container img {
+            width: 50px;
+            height: 50px;
+            border-radius: 5px;
+            border: 1px solid #ddd;
+            object-fit: cover;
+        }
+
+        .button {
+            display: block;
+            width: 100%;
+            padding: 10px;
+            text-align: center;
+            background-color: #2d87d7;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .button:hover {
+            background-color: #1a5f9e;
+        }
+
+        .ad-placeholder {
+            width: 100%;
+            height: 100px;
+            background-color: #eee;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 5px;
+            border: 1px solid #ddd;
+            margin-top: auto;
+        }
+    </style>
+</head>
+<body>
+    <div class="phone">
+        <div class="header">
+            <button class="sos">SOS</button>
+            <div class="logo">WHIML</div>
+        </div>
+
+        <div class="container">
+            <div class="camera-placeholder">Simulacro de Cámara</div>
+            <h3>Imágenes de la maleta</h3>
+            <div class="uploaded-images-container">
+                <img src="img/maleta_ejemplo_3cuartos.jpg" alt="Maleta 1">
+                <img src="img/maleta_ejemplo_3cuartos_3.jpg" alt="Maleta 2">
+                <img src="img/maleta_ejemplo_lateral.jpg" alt="Maleta 3">
+                <img src="img/maleta_ejemplo_detalles.jpg" alt="Maleta 4">
+                <img src="img/maleta_ejemplo_abierta.jpg" alt="Maleta 5">
+            </div>
+            <h3>Detalles de la maleta</h3>
+            <div class="individual-details-container">
+                <img src="img/maleta_detalle01.jpg" alt="Detalle 1">
+                <img src="img/maleta_detalle02.jpg" alt="Detalle 2">
+                <img src="img/maleta_detalle03.jpg" alt="Detalle 3">
+                <img src="img/maleta_detalle04.jpg" alt="Detalle 4">
+                <img src="img/maleta_detalle05.jpg" alt="Detalle 5">
+            </div>
+            <button class="button">Añadir Maleta</button>
+            <div class="ad-placeholder">Espacio para Publicidad</div>
+            <a href="index.html" class="button">Volver</a>
+        </div>
+    </div>
+</body>
+</html>

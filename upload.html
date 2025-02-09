@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WHIML - Subir Equipaje</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f9;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .phone {
+            width: 375px;
+            height: 667px;
+            border: 15px solid #2d87d7;
+            border-radius: 40px;
+            background-color: #fff;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+            overflow: hidden;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px 15px;
+            background-color: #2d87d7;
+            color: white;
+            font-size: 20px;
+            font-weight: bold;
+        }
+
+        .header .logo {
+            flex: 1;
+            text-align: center;
+        }
+
+        .header .sos {
+            flex: 0;
+            color: white;
+            background-color: red;
+            font-size: 18px;
+            border-radius: 10px;
+            font-weight: bolder;
+            cursor: pointer;
+            text-transform: uppercase;
+        }
+
+        .container {
+            flex: 1;
+            padding: 15px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            overflow-y: auto;
+        }
+
+        .input-container {
+            width: 100%;
+            margin-bottom: 15px;
+        }
+
+        label {
+            display: block;
+            font-weight: bold;
+            margin-bottom: 5px;
+        }
+
+        input, textarea {
+            width: 100%;
+            padding: 8px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            font-size: 14px;
+        }
+
+        .button {
+            display: block;
+            width: 100%;
+            padding: 10px;
+            text-align: center;
+            background-color: #2d87d7;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            margin-top: 10px;
+        }
+
+        .button:hover {
+            background-color: #1a5f9e;
+        }
+
+        .ad-placeholder {
+            width: 100%;
+            height: 100px;
+            background-color: #eee;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 5px;
+            border: 1px solid #ddd;
+            margin-top: auto;
+        }
+    </style>
+</head>
+<body>
+    <div class="phone">
+        <div class="header">
+            <button class="sos">SOS</button>
+            <div class="logo">WHIML</div>
+        </div>
+
+        <div class="container">
+            <h3>Subir Equipaje</h3>
+            <div class="input-container">
+                <label for="upload-img">Subir imagen de la maleta:</label>
+                <input type="file" id="upload-img">
+            </div>
+            <div class="input-container">
+                <label for="color">Color de la maleta:</label>
+                <input type="text" id="color">
+            </div>
+            <div class="input-container">
+                <label for="modelo">Modelo de la maleta:</label>
+                <input type="text" id="modelo">
+            </div>
+            <div class="input-container">
+                <label for="detalles">Detalles adicionales:</label>
+                <textarea id="detalles" rows="3"></textarea>
+            </div>
+            <button class="button">Confirmar subida</button>
+            <div class="ad-placeholder">Espacio para Publicidad</div>
+            <button class="button" onclick="window.location.href='index.html'">Volver</button>
+        </div>
+    </div>
+</body>
+</html>

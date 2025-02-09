@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WHIML - Home</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f9;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .phone {
+            width: 375px;
+            height: 667px;
+            border: 15px solid #2d87d7;
+            border-radius: 40px;
+            background-color: #fff;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+            overflow: hidden;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px 15px;
+            background-color: #2d87d7;
+            color: white;
+            font-size: 20px;
+            font-weight: bold;
+        }
+
+        .header .logo {
+            flex: 1;
+            text-align: center;
+        }
+
+        .header .sos {
+            flex: 0;
+            color: white;
+            background-color: red;
+            font-size: 18px;
+            border-radius: 10px;
+            font-weight: bolder;
+            cursor: pointer;
+            text-transform: uppercase;
+        }
+
+        .container {
+            flex: 1;
+            padding: 15px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            overflow-y: auto;
+        }
+
+        .grid-container {
+            display: flex;
+            justify-content: space-between;
+            width: 100%;
+            flex-grow: 1;
+            height: 50%;
+        }
+
+        .grid-item {
+            width: 48%;
+            background-color: #f9f9f9;
+            border-radius: 5px;
+            text-align: center;
+            font-size: 16px;
+            font-weight: bold;
+            border: 1px solid #ddd;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100%;
+        }
+
+        .full-width-item {
+            width: 100%;
+            background-color: #f9f9f9;
+            border-radius: 5px;
+            text-align: center;
+            font-size: 16px;
+            font-weight: bold;
+            border: 1px solid #ddd;
+            margin-top: 10px;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 50%;
+        }
+
+        .ad-placeholder {
+            width: 100%;
+            height: 100px;
+            background-color: #eee;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 5px;
+            border: 1px solid #ddd;
+            margin-top: auto;
+        }
+    </style>
+</head>
+<body>
+    <div class="phone">
+        <div class="header">
+            <button class="sos">SOS</button>
+            <div class="logo">WHIML</div>
+        </div>
+
+        <div class="container">
+            <div class="username">Usuario Pérez García</div>
+            <a href="luggage.html" class="section-link">Mis maletas</a>
+            <div class="grid-container">
+                <a href="upload.html" class="grid-item">Subir equipaje</a>
+                <a href="trips.html" class="grid-item">Mis viajes</a>
+            </div>
+            <a href="track.html" class="full-width-item">Trackear mi equipaje</a>
+            <div class="ad-placeholder">Espacio para Publicidad</div>
+        </div>
+    </div>
+</body>
+</html>
